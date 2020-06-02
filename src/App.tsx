@@ -6,10 +6,10 @@ import Projects from "./Components/Projects";
 
 export default function App() {
   return (
-    <>
+    <div className="container">
       <Hero />
       <About />
       <Projects />
-    </>
+    </div>
   );
 }
