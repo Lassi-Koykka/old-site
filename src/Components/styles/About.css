@@ -1,0 +1,27 @@
+/*About container*/
+.aboutContainer {
+  grid-row: 2;
+  text-align: center;
+  padding: 2vh;
+}
+.aboutTitle {
+  text-shadow: 2px 2px lightslategray;
+  font-weight: bold;
+  color: #a54c2e;
+  font-size: 2em;
+  margin: 1vh;
+}
+
+.aboutContainer p {
+  margin: 1vh;
+}
+
+.aboutText {
+  font-size: 1em;
+}
+
+.picOfMe {
+  width: 40%;
+  border: 3px solid none;
+  border-radius: 20px;
+}

@@ -1,0 +1,26 @@
+/*Projects*/
+.projects {
+  grid-row: auto;
+  background: #d8d7d4;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 2vh;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template: auto;
+  grid-auto-flow: column dense;
+  grid-gap: 0.5em;
+  padding: 0.5em;
+  color: #d8d7d4;
+}
+
+.headerProjects {
+  text-shadow: 2px 2px lightslategray;
+  font-weight: bold;
+  color: #a54c2e;
+  font-size: 2em;
+  margin: 1vh;
+}
