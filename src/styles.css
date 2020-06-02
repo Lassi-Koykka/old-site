@@ -79,10 +79,17 @@ header {
 
 .title {
   font: ubuntu;
+  color: #bd5734;
   font-size: 4em;
   font-weight: bold;
   font-style: oblique;
-  text-shadow: 0px 0px 3px black;
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  .title {
+    -webkit-text-stroke: 1.5px #312e2e;
+    -webkit-text-fill-color: #da5734;
+  }
 }
 
 .subtitle {
@@ -161,7 +168,7 @@ nav {
   text-shadow: 2px 2px lightslategray;
   font-weight: bold;
   color: #a54c2e;
-  font-size: 4vh;
+  font-size: 2em;
   margin: 1vh;
 }
 
@@ -205,7 +212,7 @@ nav {
   text-shadow: 2px 2px lightslategray;
   font-weight: bold;
   color: #a54c2e;
-  font-size: 4vh;
+  font-size: 2em;
   margin: 1vh;
 }
 
@@ -214,7 +221,7 @@ nav {
 }
 
 .aboutText {
-  font-size: 2vh;
+  font-size: 1em;
 }
 
 .picOfMe {
@@ -236,6 +243,7 @@ nav {
     overflow-x: scroll;
     margin: 0;
   }
+
   .projectsGrid {
     grid-template-rows: auto;
   }
@@ -262,20 +270,12 @@ nav {
     width: 20%;
   }
 
-  .aboutTitle {
-    font-size: 4vmax;
-  }
-
-  .aboutText {
-    font-size: 2vmax;
-  }
-
   .aboutContainer {
     grid-column: 1 / span 12;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
   header {
     height: 55vh;
     background-size: cover;
@@ -292,12 +292,12 @@ nav {
   }
 
   .title {
-    font-size: 10vw;
+    font-size: 2em;
   }
   .subtitle {
-    font-size: 4vw;
+    font-size: 1em;
   }
   .navlink {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 }
