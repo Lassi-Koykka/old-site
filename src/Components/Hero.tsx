@@ -4,16 +4,6 @@ import "./styles/Hero.css";
 export default function Hero() {
   return (
     <header>
-      <h4 className="signature">
-        A personal website and portofolio by Lassi Köykkä
-      </h4>
-      <div className="titleAndSubtitle">
-        <h1 className="title">Lassi Köykkä </h1>
-        <h2 className="subtitle">
-          Programming, tech, and videogames. <br />
-          It all belongs here.
-        </h2>
-      </div>
       <nav>
         <a href="#" className="navlink">
           Home
@@ -31,6 +21,16 @@ export default function Hero() {
           Contact
         </a>
       </nav>
+      <h4 className="signature">
+        A personal website and portofolio by Lassi Köykkä
+      </h4>
+      <div className="titleAndSubtitle">
+        <h1 className="title">Lassi Köykkä </h1>
+        <h2 className="subtitle">
+          Programming, tech, and videogames. <br />
+          It all belongs here.
+        </h2>
+      </div>
     </header>
   );
 }

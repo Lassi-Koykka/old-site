@@ -35,17 +35,9 @@ img {
 }
 
 body {
-  background: #d8d7d4;
+  background: #e5e5e5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-/*
-                        Colorpalette: 
-                        HEX: #454140 = Coal
-                        HEX: #bd5734 = Dark orange
-                        HEX: #a79e84 = Light Grey
-                        HEX: #7a3b2e = Clay
-                        */
 
 .container {
   display: grid;
@@ -61,58 +53,7 @@ body {
   grid-column: 1 / span 4;
 }
 
-/*MediaQuery responsiveness*/
-@media only screen and (max-width: 1000px) {
-  /*Projects responsiveness*/
-  header {
-    background-size: cover;
-    background-position: 50%;
-  }
-
-  .projects {
-    grid-column: 1 / span 12;
-    overflow-x: scroll;
-    margin: 0;
-  }
-
-  .projectsGrid {
-    grid-template-rows: auto;
-  }
-
-  .project {
-    width: 43vw;
-  }
-
-  .headerProjects {
-    position: sticky;
-    position: -webkit-sticky;
-    left: 0;
-  }
-  .projectname {
-    font-size: 2.5vmax;
-  }
-  .description {
-    font-size: 2vmax;
-    margin-bottom: 1px;
-    text-overflow: ellipsis;
-  }
-
-  .navlink:hover {
-    width: 20%;
-  }
-
-  .aboutContainer {
-    grid-column: 1 / span 12;
-  }
-}
-
 @media only screen and (max-width: 550px) {
-  header {
-    height: 55vh;
-    background-size: cover;
-    background-position: 60% -30vh;
-  }
-
   .projectsGrid {
     grid-template-rows: auto;
   }
@@ -122,13 +63,39 @@ body {
     min-height: auto;
   }
 
-  .title {
-    font-size: 2em;
-  }
-  .subtitle {
-    font-size: 1em;
-  }
-  .navlink {
-    font-size: 4.5vw;
+  /*MediaQuery responsiveness*/
+  @media only screen and (max-width: 1000px) {
+    /*Projects responsiveness*/
+
+    .projects {
+      grid-column: 1 / span 12;
+      overflow-x: scroll;
+      margin: 0;
+    }
+
+    .projectsGrid {
+      grid-template-rows: auto;
+    }
+
+    .project {
+      width: 43vw;
+    }
+
+    .projectname {
+      font-size: 2.5vmax;
+    }
+    .description {
+      font-size: 2vmax;
+      margin-bottom: 1px;
+      text-overflow: ellipsis;
+    }
+
+    .navlink:hover {
+      width: 20%;
+    }
+
+    .aboutContainer {
+      grid-column: 1 / span 12;
+    }
   }
 }

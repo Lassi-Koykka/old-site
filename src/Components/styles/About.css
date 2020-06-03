@@ -3,11 +3,12 @@
   grid-row: 2;
   text-align: center;
   padding: 2vh;
+  color: #14213d;
 }
 .aboutTitle {
-  text-shadow: 2px 2px lightslategray;
+  text-shadow: 2px 2px #14213d;
   font-weight: bold;
-  color: #a54c2e;
+  color: #fca311;
   font-size: 2em;
   margin: 1vh;
 }

@@ -1,7 +1,6 @@
 /*Projects*/
 .projects {
   grid-row: auto;
-  background: #d8d7d4;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
@@ -18,9 +17,9 @@
 }
 
 .headerProjects {
-  text-shadow: 2px 2px lightslategray;
+  text-shadow: 2px 2px #14213d;
   font-weight: bold;
-  color: #a54c2e;
+  color: #fca311;
   font-size: 2em;
   margin: 1vh;
 }
