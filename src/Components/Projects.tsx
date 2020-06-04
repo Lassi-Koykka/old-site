@@ -18,6 +18,14 @@ export default function Projects() {
           description="Some of the shell scripts I have created to speed up my workflow."
           img="./img/scripts_thumbnail.png"
         />
+
+        <Project name="Test" img="./img/snake_thumbnail.png" />
+
+        <Project />
+
+        <Project />
+
+        <Project />
       </div>
     </div>
   );

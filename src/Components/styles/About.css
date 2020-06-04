@@ -26,3 +26,9 @@
   border: 3px solid none;
   border-radius: 20px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .aboutContainer {
+    grid-column: 1 / span 12;
+  }
+}

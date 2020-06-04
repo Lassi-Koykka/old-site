@@ -1,16 +1,16 @@
 /*Projects*/
 .projects {
-  grid-row: auto;
   text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  grid-row: auto;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   padding-bottom: 2vh;
 }
 
 .projectsGrid {
   display: grid;
-  grid-template: auto;
-  grid-auto-flow: column dense;
+  grid-auto-flow: row dense;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
   grid-gap: 0.5em;
   padding: 0.5em;
   color: #d8d7d4;
@@ -22,4 +22,20 @@
   color: #fca311;
   font-size: 2em;
   margin: 1vh;
+}
+
+@media only screen and (max-width: 550px) {
+  .projectsGrid {
+    grid-auto-flow: column dense;
+    grid-template-rows: 1fr;
+    overflow-x: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects {
+    grid-column: 1 / span 12;
+    overflow-x: hidden;
+    margin: 0;
+  }
 }
