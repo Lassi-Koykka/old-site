@@ -1,6 +1,4 @@
 .project {
-  animation: pop-in 2s ease-in-out;
-
   background-color: #24292e;
   border: solid 2px black;
   border-radius: 5px;
@@ -42,17 +40,16 @@
   margin: 2.5% auto 2.5% auto;
 }
 
-@keyframes pop-in {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-4rem) scale 0.8;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-    transform: none;
-  }
+.fade-in-project {
+  opacity: 0.3;
+  visibility: hidden;
+  transition: opacity 0.3s ease-out, transform 0.8s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-project.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 @media only screen and (max-width: 1000px) {

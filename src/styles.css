@@ -43,12 +43,3 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-
-/*Projects*/
-.projects {
-  grid-column: 5 / span 12;
-}
-
-.aboutContainer {
-  grid-column: 1 / span 4;
-}
