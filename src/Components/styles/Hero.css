@@ -4,7 +4,7 @@
 header {
   grid-column: 1 / span 12;
   font-family: Ubuntu, sans-serif;
-  background-image: linear-gradient(blue, orange, purple),
+  background-image: linear-gradient(black, black, white),
     url(./img/MyPic-min.png);
   background-blend-mode: saturation;
   background-repeat: no-repeat;
@@ -54,7 +54,6 @@ nav {
 
 .navlink {
   background-color: #14213d;
-  outline: 2px solid black;
   color: #fca311;
   width: 20%;
   text-decoration: none;

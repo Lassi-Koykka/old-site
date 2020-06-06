@@ -1,6 +1,8 @@
 .project {
-  background-color: #24292e;
-  border: solid 2px black;
+  background-color: rgb(52, 58, 65);
+  box-shadow: 2px 2px 4px black;
+  color: white;
+  border: solid 0px black;
   border-radius: 5px;
   transition: 0.3s;
   height: auto;
@@ -8,19 +10,20 @@
 }
 
 .project:hover {
-  background-color: #434a52;
+  background-color: #19395e;
+  color: white;
+  transition: 0.2s;
 }
 
 .projectname {
-  font-family: Courier, monospace;
+  font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  text-decoration: none;
-  color: #d8d7d4;
+  text-decoration: underline;
   font-size: 1.2em;
 }
 
 .projectname:hover {
-  color: #bd5734;
+  color: #fca311;
   text-decoration: underline;
 }
 
@@ -33,7 +36,6 @@
 .projectThumbnail {
   object-fit: cover;
   display: block;
-  border: darkgrey 3px ridge;
   border-radius: 4px;
   height: 55%;
   width: 90%;
@@ -70,7 +72,7 @@
 
 @media only screen and (max-width: 550px) {
   .project {
-    min-width: 95vw;
+    min-width: 70vw;
     min-height: auto;
   }
 }
