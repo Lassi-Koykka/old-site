@@ -3,12 +3,14 @@ import "./styles/Hero.css";
 
 export default function Hero() {
   const [isVisible, setVisible] = React.useState(false);
-  const domRef = React.useRef();
+  const domRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => setVisible(entry.isIntersecting));
     });
-    observer.observe(domRef.current);
+    if (domRef.current !== null) {
+      observer.observe(domRef.current);
+    }
   }, []);
 
   return (

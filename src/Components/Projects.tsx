@@ -1,16 +1,19 @@
 import React from "react";
 import Project from "./Project";
 import "./styles/Projects.css";
+import Emoji from "./Emoji";
 
 export default function Projects() {
   const [isVisible, setVisible] = React.useState(false);
-  const domRef = React.useRef();
+  const domRef = React.useRef<HTMLHeadingElement>(null);
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => setVisible(entry.isIntersecting));
     });
-    observer.observe(domRef.current);
+    if (domRef.current !== null) {
+      observer.observe(domRef.current);
+    }
   }, []);
 
   return (
@@ -21,22 +24,30 @@ export default function Projects() {
         }`}
         ref={domRef}
       >
-        🛠️ Some of my favourite projects
+        <Emoji symbol="🛠️" label="hammer and wrench" /> Some of my favourite
+        projects
       </h3>
       <div className="projectsGrid">
         <Project
           name="HTML5 Snake"
           description="Classic snake game made with HTML canvas and vanilla JavaScript."
-          img="./img/snake_thumbnail.png"
+          img="https://img.icons8.com/color/512/000000/html-5.png"
+          open={false}
         />
 
         <Project
-          name="Shell scripts"
+          name="Shell Scripts"
           description="Some of the shell scripts I have created to speed up my workflow."
-          img="./img/scripts_thumbnail.png"
+          img="https://bashlogo.com/img/symbol/svg/full_colored_dark.svg"
+          open={false}
         />
 
-        <Project name="Test" img="./img/snake_thumbnail.png" />
+        <Project
+          name="R6 Randomizer"
+          description="a python script that web scrapes data about the game and randomizes loadouts for the player"
+          img="https://img.icons8.com/color/512/000000/python.png"
+          open={false}
+        />
 
         <Project />
 

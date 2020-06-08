@@ -1,14 +1,17 @@
 import React from "react";
 import "./styles/About.css";
+import Emoji from "./Emoji";
 
 export default function About() {
   const [isVisible, setVisible] = React.useState(false);
-  const domRef = React.useRef<HTMLAllCollection>(null);
+  const domRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => setVisible(entry.isIntersecting));
     });
-    observer.observe(domRef.current);
+    if (domRef.current !== null) {
+      observer.observe(domRef.current);
+    }
   }, []);
 
   return (
@@ -24,7 +27,7 @@ export default function About() {
             isVisible ? "is-visible" : ""
           }`}
         >
-          📝 About me
+          <Emoji symbol="📝" label="pen and paper" /> About me
         </h2>
         <div
           className={`aboutText fade-in-about ${isVisible ? "is-visible" : ""}`}

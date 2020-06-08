@@ -44,6 +44,7 @@
     grid-auto-flow: column dense;
     grid-template-rows: 1fr;
     overflow-x: auto;
+    height: auto;
   }
 }
 

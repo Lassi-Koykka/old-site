@@ -1,12 +1,15 @@
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: rgb(52, 58, 65);
   box-shadow: 2px 2px 4px black;
   color: white;
   border: solid 0px black;
   border-radius: 5px;
-  transition: 0.3s;
-  height: auto;
+  height: 25vh;
   padding-bottom: 1em;
+  transition: 1s;
 }
 
 .project:hover {
@@ -18,7 +21,10 @@
 .projectname {
   font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+  justify-self: flex-start;
   text-decoration: underline;
+  display: block;
+  margin-bottom: 1em;
   font-size: 1.2em;
 }
 
@@ -27,18 +33,55 @@
   text-decoration: underline;
 }
 
+.expandArrow {
+  cursor: pointer;
+  width: 10%;
+  align-self: center;
+  border-radius: 100vw;
+
+  transition: 0.2s;
+}
+
+.expandArrow:hover {
+  background: #f3f3f3;
+  box-shadow: #f3f3f3 0px 0px 10px;
+
+  transition: 0.2s;
+}
+
 .description {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
   font-size: 1em;
-  margin-bottom: 1px;
+  margin-bottom: 0em;
   text-overflow: ellipsis;
+
+  transition: height 1s;
+}
+.project.open {
+  height: auto;
+
+  transition: 1s;
+}
+
+.project.open .description {
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+  margin-bottom: 1em;
+
+  transition: 0.5s;
+}
+
+.project.open .expandArrow {
+  transform: rotate(180deg);
 }
 
 .projectThumbnail {
-  object-fit: cover;
+  object-fit: contain;
   display: block;
-  border-radius: 4px;
-  height: 55%;
-  width: 90%;
+  max-width: 35%;
   margin: 2.5% auto 2.5% auto;
 }
 
@@ -48,10 +91,12 @@
   transition: opacity 0.3s ease-out, transform 0.8s ease-out;
   will-change: opacity, visibility;
 }
+
 .fade-in-project.is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;
+  transition: 0.5s;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -63,16 +108,20 @@
     font-size: 1.5em;
   }
 
+  .projectThumbnail {
+    width: 50%;
+  }
+
   .description {
     font-size: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
     text-overflow: ellipsis;
   }
 }
 
 @media only screen and (max-width: 550px) {
   .project {
-    min-width: 70vw;
-    min-height: auto;
+    min-width: 85vw;
+    height: auto;
   }
 }
