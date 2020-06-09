@@ -1,15 +1,15 @@
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: rgb(52, 58, 65);
   box-shadow: 2px 2px 4px black;
   color: white;
   border: solid 0px black;
   border-radius: 5px;
-  height: 25vh;
+
+  height: min-content;
   padding-bottom: 1em;
-  transition: 1s;
 }
 
 .project:hover {
@@ -34,6 +34,7 @@
 }
 
 .expandArrow {
+  z-index: 2;
   cursor: pointer;
   width: 10%;
   align-self: center;
@@ -49,40 +50,38 @@
   transition: 0.2s;
 }
 
+.projectThumbnail {
+  object-fit: contain;
+  display: block;
+  width: 35%;
+  margin: 2.5% auto 2.5% auto;
+}
+
 .description {
+  max-height: 0px;
   opacity: 0;
-  height: 0;
-  overflow: hidden;
+  overflow: none;
   font-size: 1em;
   margin-bottom: 0em;
   text-overflow: ellipsis;
 
-  transition: height 1s;
+  transition: max-height 0.3s, opacity 0.3s ease-out,
+    margin-bottom 0.3s ease-out;
 }
 .project.open {
-  height: auto;
-
-  transition: 1s;
+  max-height: auto;
+  transition: 0.5s;
 }
 
 .project.open .description {
   opacity: 1;
-  height: auto;
   overflow: visible;
   margin-bottom: 1em;
-
-  transition: 0.5s;
+  max-height: 500px;
 }
 
 .project.open .expandArrow {
   transform: rotate(180deg);
-}
-
-.projectThumbnail {
-  object-fit: contain;
-  display: block;
-  max-width: 35%;
-  margin: 2.5% auto 2.5% auto;
 }
 
 .fade-in-project {
@@ -97,6 +96,7 @@
   transform: none;
   visibility: visible;
   transition: 0.5s;
+  will-change: visibility, opacity;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -109,7 +109,7 @@
   }
 
   .projectThumbnail {
-    width: 50%;
+    width: 40%;
   }
 
   .description {
@@ -122,6 +122,6 @@
 @media only screen and (max-width: 550px) {
   .project {
     min-width: 85vw;
-    height: auto;
+    height: min-content;
   }
 }

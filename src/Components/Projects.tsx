@@ -19,7 +19,7 @@ export default function Projects() {
   return (
     <div className={`projects`}>
       <h3
-        className={`headerProjects fade-in-projects ${
+        className={`projectsHeader fade-in-projects ${
           isVisible ? "is-visible" : ""
         }`}
         ref={domRef}

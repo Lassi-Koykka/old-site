@@ -23,7 +23,7 @@ export default function About() {
           className={`picOfMe fade-in-about ${isVisible ? "is-visible" : ""}`}
         />
         <h2
-          className={`aboutTitle fade-in-about ${
+          className={`aboutHeader fade-in-about ${
             isVisible ? "is-visible" : ""
           }`}
         >

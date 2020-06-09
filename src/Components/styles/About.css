@@ -6,7 +6,7 @@
   padding: 2vh;
   color: #14213d;
 }
-.aboutTitle {
+.aboutHeader {
   text-shadow: 2px 2px #14213d;
   font-weight: bold;
   color: #fca311;
@@ -24,7 +24,6 @@
 
 .picOfMe {
   width: 40%;
-  border: 3px solid none;
   border-radius: 20px;
 }
 
@@ -45,5 +44,10 @@
 @media only screen and (max-width: 1000px) {
   .aboutContainer {
     grid-column: 1 / span 12;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .picOfMe {
+    width: 50%;
   }
 }
