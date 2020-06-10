@@ -11,6 +11,7 @@
 .projectsGrid {
   display: grid;
   grid-auto-flow: row dense;
+  overflow-y: hidden;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
   grid-gap: 0.5em;
   padding: 0.5em;
@@ -52,6 +53,5 @@
   .projects {
     grid-column: 1 / span 12;
     overflow-x: hidden;
-    margin: 0;
   }
 }

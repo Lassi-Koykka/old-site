@@ -1,6 +1,8 @@
 .workContainer {
   grid-column: 1 / span 6;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .workHeader {
@@ -9,4 +11,24 @@
   color: #fca311;
   font-size: 2em;
   margin: 1vh;
+}
+
+.fade-in-work {
+  opacity: 0;
+  transform: translateX(-20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 0.5s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-work.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+@media only screen and (max-width: 1000px) {
+  .workContainer {
+    grid-column: 1 /span 12;
+  }
 }
