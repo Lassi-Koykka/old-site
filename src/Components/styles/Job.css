@@ -28,3 +28,17 @@
   display: flex;
   justify-content: space-around;
 }
+
+.fade-in-job {
+  opacity: 0;
+  transform: translateX(-20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 0.25s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-job.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}

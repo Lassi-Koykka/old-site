@@ -6,6 +6,7 @@ import "./styles/Work.css";
 export default function Work() {
   const [isVisible, setVisible] = React.useState(false);
   const domRef = React.useRef<HTMLDivElement>(null);
+
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => setVisible(entry.isIntersecting));
