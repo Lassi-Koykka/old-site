@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/Job.css";
 
 type jobProps = {
+  education?: boolean;
   jobTitle: string;
   jobCompany: string;
   jobStart: string;
@@ -24,7 +25,7 @@ export default function Job(props: jobProps) {
 
   return (
     <div
-      className={`job fade-in-job ${isVisible ? "is-visible" : ""}`}
+      className={`job ${props.education ? 'edu' : ''} fade-in-job ${isVisible ? "is-visible" : ""}`}
       ref={domRef}
     >
       <h3 className="jobTitle">{props.jobTitle}</h3>

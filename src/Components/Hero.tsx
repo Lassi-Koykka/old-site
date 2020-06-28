@@ -1,4 +1,5 @@
 import React from "react";
+import Emoji from "./Emoji";
 import "./styles/Hero.css";
 
 export default function Hero() {
@@ -17,19 +18,24 @@ export default function Hero() {
     <header>
       <nav>
         <a href="#" className="navlink">
-          Home
+          <Emoji symbol="🏠" label="Home" />
+          <span className="navText">Home</span>
         </a>
         <a href="#" className="navlink">
-          About
+          <Emoji symbol="📝" label="About me" />
+          <span className="navText">About</span>
         </a>
         <a href="#" className="navlink">
-          Projects
+          <Emoji symbol="🛠️" label="Projects" />
+          <span className="navText">Projects</span>
         </a>
         <a href="#" className="navlink">
-          Work
+          <Emoji symbol="💼" label="History" />
+          <span className="navText">History</span>
         </a>
         <a href="#" className="navlink">
-          Contact
+          <Emoji symbol="📧" label="Contact" />
+          <span className="navText">Contact</span>
         </a>
       </nav>
       <h4 className={`signature fade-in-hero ${isVisible ? "is-visible" : ""}`}>

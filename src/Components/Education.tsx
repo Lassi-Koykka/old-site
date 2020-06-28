@@ -1,8 +1,7 @@
-import React from 'react';
-import Job from './Job';
+import React from "react";
+import Job from "./Job";
+import Emoji from "./Emoji";
 import "./styles/Edu.css";
-
-
 
 export default function Edu() {
   const [isVisible, setVisible] = React.useState(false);
@@ -19,11 +18,27 @@ export default function Edu() {
 
   return (
     <div className="eduContainer">
-      <h2 className={`workHeader fade-in-edu ${isVisible ? 'visible' : ''}`}>Education</h2>
-      <Job 
-      jobTitle="Bachelor of Technology - Information Technology" 
-      jobCompany="Savonia University of applied sciences"
-      jobStart="Jan 2019" jobEnd="Spring 2022"/>
+      <h2
+        className={`workHeader fade-in-edu ${isVisible ? "is-visible" : ""}`}
+        ref={domRef}
+      >
+        <Emoji symbol="🎓" label="Graduation cap" /> Education
+      </h2>
+      <Job
+        education={true}
+        jobTitle="Bachelor of Technology - Information Technology"
+        jobCompany="Savonia University of applied sciences"
+        jobStart="Jan 2019"
+        jobEnd="Spring 2022"
+      />
+
+      <Job
+        education={true}
+        jobTitle="Finnish matriculation examination"
+        jobCompany="Tampereen klassillinen lukio"
+        jobStart="Aug 2015"
+        jobEnd="May 2018"
+      />
     </div>
   );
-};
+}

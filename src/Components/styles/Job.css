@@ -12,6 +12,7 @@
   background: #fca311;
   color: #14213d;
   border-radius: 15px;
+  max-width: 100%;
 }
 
 .jobCompany {
@@ -35,6 +36,26 @@
   visibility: hidden;
   transition: opacity 0.6s ease-out, transform 0.25s ease-out;
   will-change: opacity, visibility;
+}
+
+.edu {
+  background: #fca311;
+}
+
+.edu > .jobTitle {
+  background: rgb(52, 58, 65);
+  color: white;
+}
+
+.edu > .jobCompany {
+  border-color: black;
+  color: black;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.fade-in-job.edu {
+  transform: translateX(20vh);
 }
 
 .fade-in-job.is-visible {
