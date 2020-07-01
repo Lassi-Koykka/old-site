@@ -33,17 +33,21 @@ export default function About() {
           className={`aboutText fade-in-about ${isVisible ? "is-visible" : ""}`}
         >
           <p>
-            I'm a dedicated and self-motivated programming hobbyist and
-            ICT-student originally from Tampere Finland. I thoroughly enjoy
-            problem-solving and challenging myself. On my spare time, I often
-            like to work on all kinds of personal projects (including this
-            website) and study new technologies so I can play with them and see
-            what I can come up with. Most of these projects can be found listed
-            on my GitHub account. I'm a quick learner and I'm interested in how
-            things actually operate under the hood.
+            I'm a dedicated and self-motivated developer hobbyist and
+            ICT-student originally from Tampere Finland.
+          </p> 
+          <p>
+            My strengths lie in front-end web development (Vanilla JavaScript, React) and I'm taking courses and self studying back-end technologies such as Node.js and flask.
+          </p>
+          <p> I'm a quick learner and I wish to understand 
+            how things actually operate under the hood. I thoroughly enjoy the process of creative
+            problem-solving and challenging myself by setting requirements and objectives for my work. On my spare time, I often
+            like to work on all kinds of personal projects (this
+            website for example), trying out new technologies and seeing
+            what I can come up with. All of these projects can be found on my Github.
           </p>
           <p>
-            Currently living in Kuopio and studying information technology at
+            I Currently live in Kuopio and study information technology at
             Savonia University of Applied Sciences.
           </p>
         </div>
