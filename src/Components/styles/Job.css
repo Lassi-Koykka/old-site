@@ -51,6 +51,7 @@
   border-color: black;
   color: black;
   max-width: 80%;
+  width:auto;
   word-wrap: break-word;
 }
 
