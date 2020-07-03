@@ -43,6 +43,7 @@
   transform: rotateY(180deg);
   background: rgb(52, 58, 65);
   padding: 1em;
+  padding-bottom: 4em;
 }
 
 .projectname {
@@ -51,6 +52,7 @@
   justify-self: flex-start;
   text-decoration: underline;
   display: block;
+  overflow: visible;
   margin-bottom: 1em;
   font-size: 1.2em;
 }
@@ -82,7 +84,7 @@
 .projectThumbnail {
   object-fit: contain;
   display: block;
-  width: 5em;
+  height: 5em;
   margin: 1em auto 1em auto;
 }
 

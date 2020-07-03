@@ -52,6 +52,12 @@ export default function Hero() {
             I transform <Emoji symbol="☕" label="Coffee" /> into code, and
             customers into happy customers.
           </h2>
+          <a href="https://www.github.com/lassi-koykka" className="heroLink">
+            <img src="/img/GitHub-Mark-Light-64px.png" alt="github" className="heroLinkPic"/>
+          </a>
+          <a href="https://www.linkedin.com/in/lassi-koykka/" className="heroLink">
+            <img src="/img/linkedin.png" alt="LinkedIn" className="heroLinkPic"/>
+          </a>
         </div>
       </div>
     </header>

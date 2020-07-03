@@ -8,8 +8,8 @@ export default function Projects() {
   const domRef = React.useRef<HTMLHeadingElement>(null);
 
   React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
     if (domRef.current !== null) {
       observer.observe(domRef.current);
@@ -28,30 +28,39 @@ export default function Projects() {
         projects
       </h3>
       <div className="projectsGrid">
-        <Project
-          name="HTML5 Snake"
-          description="Classic snake game made with HTML canvas and vanilla JavaScript."
-          img="https://img.icons8.com/color/512/000000/html-5.png"
-          open={false}
-        />
 
         <Project
           name="React portofolio"
           description="This portofolio / personal website was created using React with hooks."
-          img="/img/react-logo.png"
+          img="/img/react.png"
           open={false}
         />
+
         <Project
-          name="Shell Scripts"
-          description="Some of the shell scripts I have created to speed up my workflow."
-          img="https://bashlogo.com/img/symbol/svg/full_colored_dark.svg"
+          name="Cabin reservation"
+          description={`A cabin reservation management system. 
+          ${" "}Made with C# and WinForms (SQLite database). Final group project for a software engineering course.`}
+          img="/img/CSharp.png"
           open={false}
         />
 
         <Project
           name="R6 Randomizer"
-          description="a python script that web scrapes data about the game and randomizes loadouts for the player"
-          img="https://img.icons8.com/color/512/000000/python.png"
+          description="A Python script that web scrapes data about the game and randomizes loadouts for the player"
+          img="/img/python.png"
+          open={false}
+        />
+        <Project
+          name="HTML5 Snake"
+          description="Classic snake game made with HTML canvas and vanilla JavaScript."
+          img="/img/html5.png"
+          open={false}
+        />
+
+        <Project
+          name="Shell Scripts"
+          description="Some of the shell scripts I have created to speed up my workflow."
+          img="/img/bash.svg"
           open={false}
         />
       </div>
