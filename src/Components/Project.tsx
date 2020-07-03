@@ -35,24 +35,30 @@ export default function Project({
   }, []);
 
   return (
-    <div
-      className={`project ${isOpen ? "open" : ""} fade-in-project ${
-        isVisible ? "is-visible" : ""
-      } `}
+    <div className={`outerProject ${isOpen ? "open" : ""} fade-in-project ${
+      isVisible ? "is-visible" : ""
+    } `}
       ref={domRef}
-      onClick={e => toggleExpand(e)}
-    >
-      <img src={img} alt="project thumbnail" className="projectThumbnail" />
-      <a className="projectname" href={link}>
-        {name}
-      </a>
-      <p className="description">{description}</p>
-      <img
-        className="expandArrow {}"
-        src="https://img.icons8.com/color/48/000000/expand-arrow.png"
-        alt="expand"
-        onClick={e => toggleExpand(e)}
-      />
+      onClick={e => toggleExpand(e)}>
+      <div
+        className="innerProject"
+      >
+        <div className="projectFront">
+        <img src={img} alt="project thumbnail" className="projectThumbnail" />
+        <a className="projectname" href={link}>
+          {name}
+        </a>
+        <img
+          className="expandArrow {}"
+          src="https://img.icons8.com/color/48/000000/expand-arrow.png"
+          alt="expand"
+          onClick={e => toggleExpand(e)}
+        />
+        </div>
+      <div className="projectBack">
+        <p className="description">{description}</p>
+      </div>
+      </div>
     </div>
   );
 }

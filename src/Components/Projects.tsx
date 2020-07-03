@@ -36,6 +36,12 @@ export default function Projects() {
         />
 
         <Project
+          name="React portofolio"
+          description="This portofolio / personal website was created using React with hooks."
+          img="/img/react-logo.png"
+          open={false}
+        />
+        <Project
           name="Shell Scripts"
           description="Some of the shell scripts I have created to speed up my workflow."
           img="https://bashlogo.com/img/symbol/svg/full_colored_dark.svg"
@@ -48,12 +54,6 @@ export default function Projects() {
           img="https://img.icons8.com/color/512/000000/python.png"
           open={false}
         />
-
-        <Project />
-
-        <Project />
-
-        <Project />
       </div>
     </div>
   );

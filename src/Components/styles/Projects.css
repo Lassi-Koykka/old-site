@@ -10,6 +10,7 @@
 
 .projectsGrid {
   display: grid;
+
   grid-auto-flow: row dense;
   overflow-y: hidden;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;

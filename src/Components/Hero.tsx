@@ -38,18 +38,21 @@ export default function Hero() {
           <span className="navText">Contact</span>
         </a>
       </nav>
-      <h4 className={`signature fade-in-hero ${isVisible ? "is-visible" : ""}`}>
-        A personal website and portofolio <br/>by Lassi Köykkä
-      </h4>
-      <div className={`titleAndSubtitle fade-in-hero ${isVisible ? "is-visible" : ""}`} ref={domRef}>
-        <h1 className={`title`}>
-          Lassi Köykkä
-        </h1>
-        <h2
-          className={`subtitle`}
-        >
-          I transform <Emoji symbol="☕" label="Coffee"/> into code, and customers into happy customers.
-        </h2>
+      <div
+        className={`fade-in-hero ${isVisible ? "is-visible" : ""}`}
+        style={{ height: "100%", display: "flex", flexDirection: "column" }}
+      >
+        <h4 className={`signature`}>
+          A personal website and portofolio <br />
+          by Lassi Köykkä
+        </h4>
+        <div className={`titleAndSubtitle`} ref={domRef}>
+          <h1 className={`title`}>Lassi Köykkä</h1>
+          <h2 className={`subtitle`}>
+            I transform <Emoji symbol="☕" label="Coffee" /> into code, and
+            customers into happy customers.
+          </h2>
+        </div>
       </div>
     </header>
   );
