@@ -39,17 +39,16 @@ export default function Hero() {
         </a>
       </nav>
       <h4 className={`signature fade-in-hero ${isVisible ? "is-visible" : ""}`}>
-        A personal website and portofolio by Lassi Köykkä
+        A personal website and portofolio <br/>by Lassi Köykkä
       </h4>
-      <div className="titleAndSubtitle" ref={domRef}>
-        <h1 className={`title fade-in-hero ${isVisible ? "is-visible" : ""}`}>
-          Lassi Köykkä{" "}
+      <div className={`titleAndSubtitle fade-in-hero ${isVisible ? "is-visible" : ""}`} ref={domRef}>
+        <h1 className={`title`}>
+          Lassi Köykkä
         </h1>
         <h2
-          className={`subtitle fade-in-hero ${isVisible ? "is-visible" : ""}`}
+          className={`subtitle`}
         >
-          Programming, tech, and videogames. <br />
-          It all belongs here.
+          I transform <Emoji symbol="☕" label="Coffee"/> into code, and customers into happy customers.
         </h2>
       </div>
     </header>

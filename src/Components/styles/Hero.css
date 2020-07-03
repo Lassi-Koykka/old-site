@@ -4,7 +4,7 @@
 header {
   grid-column: 1 / span 12;
   font-family: Ubuntu, sans-serif;
-  background-image: linear-gradient(black, black, white),
+  background-image: linear-gradient(white, black, white),
     url("./img/MyPic-min.png");
   background-blend-mode: saturation;
   background-repeat: no-repeat;
@@ -21,14 +21,23 @@ header {
 .signature {
   color: #14213d;
   margin-top: 2.5em;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .titleAndSubtitle {
   filter: none;
   text-align: left;
-  padding: 5vw;
+  margin: 4vw;
+  padding: 1.5em;
   margin-top: auto;
   margin-bottom: auto;
+  word-wrap: break-word;
+
+  max-width: 33%;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.65);
 }
 
 .title {
@@ -99,6 +108,12 @@ nav {
     background-position: 50%;
   }
 
+  .titleAndSubtitle {
+    margin: auto 2vw;
+    max-width: 100%;
+    background: none;
+  }
+
   .navlink:hover {
     width: 20%;
   }
@@ -130,5 +145,9 @@ nav {
   .subtitle {
     font-weight: bold;
     font-size: 1.1em;
+  }
+
+  .signature {
+    word-wrap: break-word;
   }
 }
