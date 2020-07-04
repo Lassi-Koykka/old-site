@@ -9,11 +9,24 @@ export default function Work() {
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
+      entries.forEach(entry => {
+        
+        // In your case there's only one element to observe:     
+        if (entry.isIntersecting) {
+          
+          // Not possible to set it back to false like this:
+          setVisible(true);
+          
+          // No need to keep observing:
+          if(domRef.current !== null){
+            observer.unobserve(domRef.current);
+          }
+        }
+      });
     });
-    if (domRef.current !== null) {
-      observer.observe(domRef.current);
-    }
+      if(domRef.current !== null){
+        observer.observe(domRef.current);
+      }
   }, []);
 
   return (

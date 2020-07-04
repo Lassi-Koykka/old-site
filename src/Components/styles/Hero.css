@@ -4,19 +4,33 @@
 header {
   grid-column: 1 / span 12;
   font-family: Ubuntu, sans-serif;
-  background-image: linear-gradient(white, black, white),
-    url("/img/MyPic-min.png");
-  background-blend-mode: saturation;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+
+  overflow: hidden;
   color: #d8d7d4;
   display: flex;
   flex-flow: column nowrap;
   height: 100vh;
   text-align: center;
 }
+
+header::before {
+  background: url("/img/MyPic-min.jpg");
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
+}
+
+
 
 .signature {
   color: #14213d;
@@ -41,7 +55,11 @@ header {
 }
 
 .heroLink {
-  margin: 0.5em
+  margin: 0.5em;
+}
+
+.heroLink  img{
+  width: 2.5em
 }
 
 .title {
@@ -131,7 +149,9 @@ nav {
 @media only screen and (max-width: 550px) {
   header {
     height: 55vh;
-    background-size: cover;
+  }
+  
+  header::before {
     background-position: 60% -20vh;
   }
 

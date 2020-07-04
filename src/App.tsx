@@ -7,13 +7,16 @@ import Work from "./Components/Work";
 import Edu  from "./Components/Education"
 
 export default function App() {
+
   return (
-    <div className="container">
+    <>
       <Hero />
+      <div className="container">
       <About />
       <Projects />
       <Work />
       <Edu />
-    </div>
+      </div>
+      </>
   );
 }

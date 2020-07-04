@@ -8,12 +8,25 @@ export default function Projects() {
   const domRef = React.useRef<HTMLHeadingElement>(null);
 
   React.useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => setVisible(entry.isIntersecting));
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        
+        // In your case there's only one element to observe:     
+        if (entry.isIntersecting) {
+          
+          // Not possible to set it back to false like this:
+          setVisible(true);
+          
+          // No need to keep observing:
+          if(domRef.current !== null){
+            observer.unobserve(domRef.current);
+          }
+        }
+      });
     });
-    if (domRef.current !== null) {
-      observer.observe(domRef.current);
-    }
+      if(domRef.current !== null){
+        observer.observe(domRef.current);
+      }
   }, []);
 
   return (
@@ -50,6 +63,14 @@ export default function Projects() {
           img="/img/python.png"
           open={false}
         />
+
+        <Project
+          name="Dating app sim"
+          description="A simple parody game based on dating apps such as Tinder. Created with winforms and C#"
+          img="/img/CSharp.png"
+          open={false}
+        />
+
         <Project
           name="HTML5 Snake"
           description="Classic snake game made with HTML canvas and vanilla JavaScript."

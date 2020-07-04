@@ -5,13 +5,27 @@ import "./styles/About.css";
 export default function About() {
   const [isVisible, setVisible] = React.useState(false);
   const domRef = React.useRef<HTMLDivElement>(null);
+  
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
+      entries.forEach(entry => {
+        
+        // In your case there's only one element to observe:     
+        if (entry.isIntersecting) {
+          
+          // Not possible to set it back to false like this:
+          setVisible(true);
+          
+          // No need to keep observing:
+          if(domRef.current !== null){
+            observer.unobserve(domRef.current);
+          }
+        }
+      });
     });
-    if (domRef.current !== null) {
-      observer.observe(domRef.current);
-    }
+      if(domRef.current !== null){
+        observer.observe(domRef.current);
+      }
   }, []);
 
   return (
@@ -21,7 +35,7 @@ export default function About() {
       }`}
     >
       <div ref={domRef}>
-        <img src="./img/lassi_koykka.jpg" alt="Me" className={`picOfMe`} />
+        <img src="/img/lassi_koykka-min.jpg" alt="Me" className={`picOfMe`} />
         <h2 className={`aboutHeader`}>
           <Emoji symbol="📝" label="pen and paper" /> About me
         </h2>
