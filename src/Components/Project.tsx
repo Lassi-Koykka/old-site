@@ -14,7 +14,7 @@ export default function Project({
   link,
   name,
   description,
-  open
+  open,
 }: projectProps) {
   const [isOpen, setOpen] = React.useState(open);
 
@@ -25,8 +25,8 @@ export default function Project({
   const [isVisible, setVisible] = React.useState(false);
   const domRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
 
     if (domRef.current !== null) {
@@ -35,29 +35,29 @@ export default function Project({
   }, []);
 
   return (
-    <div className={`outerProject ${isOpen ? "open" : ""} fade-in-project ${
-      isVisible ? "is-visible" : ""
-    } `}
+    <div
+      className={`outerProject ${isOpen ? "open" : ""} fade-in-project ${
+        isVisible ? "is-visible" : ""
+      } `}
       ref={domRef}
-      onClick={e => toggleExpand(e)}>
-      <div
-        className="innerProject"
-      >
+      onClick={(e) => toggleExpand(e)}
+    >
+      <div className="innerProject">
         <div className="projectFront">
-        <img src={img} alt="project thumbnail" className="projectThumbnail" />
-        <a className="projectname" href={link}>
-          {name}
-        </a>
-        <img
-          className="expandArrow {}"
-          src="https://img.icons8.com/color/48/000000/expand-arrow.png"
-          alt="expand"
-          onClick={e => toggleExpand(e)}
-        />
+          <img src={img} alt="project thumbnail" className="projectThumbnail" />
+          <a className="projectname" href={link}>
+            {name}
+          </a>
         </div>
-      <div className="projectBack">
-        <p className="description">{description}</p>
-      </div>
+          <img
+            className="expandArrow {}"
+            src="https://img.icons8.com/color/48/000000/expand-arrow.png"
+            alt="expand"
+            onClick={(e) => toggleExpand(e)}
+          />
+        <div className="projectBack">
+          <p className="description">{description}</p>
+        </div>
       </div>
     </div>
   );
