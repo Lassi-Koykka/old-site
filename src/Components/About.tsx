@@ -47,15 +47,14 @@ export default function About() {
           <p>
             My strengths lie in front-end web development (Vanilla JavaScript,
             React) and I'm currently taking courses and self studying back-end
-            technologies such as Node.js and flask.
+            technologies such as Node.js and flask. I also have experience using MySql and SQLite databases.
           </p>
           <p>
             {" "}
             I'm a quick learner and I wish to understand how things actually
             operate under the hood. I thoroughly enjoy the process of creative
-            problem-solving and challenging myself by setting requirements and
-            objectives for my work. On my spare time, I often like to work on
-            all kinds of personal projects, trying out new technologies and
+            problem-solving and challenging myself by setting goals and restrictions. On my spare time, I often like to work on
+            all kinds of personal projects, from websites to games and desktop applications. One of my favourite pastimes is trying out new technologies and
             seeing what I can come up with. All of these projects (including
             this website) can be found on my Github.
           </p>

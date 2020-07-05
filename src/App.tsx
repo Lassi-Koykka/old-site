@@ -4,19 +4,20 @@ import Hero from "./Components/Hero";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Work from "./Components/Work";
-import Edu  from "./Components/Education"
+import Edu from "./Components/Education";
+import Tools from "./Components/Tools";
 
 export default function App() {
-
   return (
     <>
       <Hero />
       <div className="container">
-      <About />
-      <Projects />
-      <Work />
-      <Edu />
+        <About />
+        <Tools />
+        <Projects />
+        <Work />
+        <Edu />
       </div>
-      </>
+    </>
   );
 }
