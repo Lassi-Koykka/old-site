@@ -6,6 +6,7 @@ import Projects from "./Components/Projects";
 import Work from "./Components/Work";
 import Edu from "./Components/Education";
 import Tools from "./Components/Tools";
+import Footer from "./Components/Footer"
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Projects />
         <Work />
         <Edu />
+        <Footer />
       </div>
     </>
   );

@@ -27,6 +27,32 @@
   border-radius: 20px;
 }
 
+.downloadButton {
+  background: rgb(52, 58, 62);
+  color: white;
+  border: none;
+  box-shadow: 3px 3px 7px -1px rgba(20, 20, 31, 0.5);
+  transform: translateY(-1px) translateX(-1px);
+  border-radius: 15px;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 0.25em 1em;
+  cursor: pointer;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  transition: 0.1s ease-in-out;
+}
+
+.downloadButton:hover {
+  box-shadow: none;
+  transform: none;
+  color: white;
+}
+
+.downloadButton:active {
+  color: #fca311
+}
+
 /*Fade in*/
 .fade-in-about {
   opacity: 0;

@@ -1,0 +1,84 @@
+footer {
+    grid-row: auto;
+    grid-column: 1 / 13;
+    background: rgb(40, 44, 46);
+    height: auto;
+    padding: 1em 2em 1em 2em;
+    color: white;
+    font-size: 1.1em;
+}
+
+.footerUpper {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-between;
+    
+}
+
+footer > p {
+    margin-bottom: 1em;
+}
+
+.hiring {
+    max-width: 50%;
+}
+
+.hiringHeader {
+    font-weight: bold;
+    width: 100%;
+    color: #fca311;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.hiringText {
+    display: block;
+}
+
+.emailText {
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 2em;
+    max-width: 50%
+}
+
+.email {
+    color: #fca311;
+    transition: 0.1s ease-in-out;
+}
+
+.email:active{
+    color: white
+}
+.email:hover{
+    color: white;
+}
+
+.email:visited {
+    color: #fca311;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 1.5em;
+    color: #fca311;
+}
+
+@media only screen and (max-width: 550px) {
+    .footerUpper {
+        flex-direction: column;
+    }
+
+    .hiring {
+        max-width: 100%;
+    }
+
+    .emailText {
+        margin: 1em 0 0 0;
+        max-width: 100%;
+    }
+}

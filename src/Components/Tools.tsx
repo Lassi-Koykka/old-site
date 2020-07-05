@@ -37,26 +37,33 @@ export default function () {
         <Emoji symbol="🧰" label="Toolbox" /> My toolbox
       </h3>
       <div className="toolLists">
-        <div className="frontEnd">
+        <div className="toolSection">
           <h2 className="toolListHeader">Front-end</h2>
           <ul className="toolList">
             <Tech name="HTML5" img="/img/html5.png" alt="HTML5" />
+            <Tech name="CSS3" img="/img/css.png" alt="CSS3" />
             <Tech name="JavaScript" img="/img/js-logo2.png" alt="JS" />
             <Tech name="React.js" img="/img/react.png" alt="React.js" />
 
           </ul>
         </div>
-        <div className="backEnd">
-            <h2 className="toolListHeader">Back-end</h2>
+        <div className="toolSection">
+          <h2 className="toolListHeader">Back-end</h2>
           <ul className="toolList">
             <Tech name="Flask" img="/img/flask.png" alt="Flask" />
-            <Tech name="MySql" img="/img/mysql.png" alt="MySql" />
+            <Tech name="MySQL" img="/img/mysql-logo.png" alt="MySql" />
+            <Tech name="SQLite" img="/img/sqlite.png" alt="SQLite" />
+            <Tech name="Node.js" img="/img/node.png" alt="Node.js" />
           </ul>
         </div>
-        <div className="other">
-            <h2 className="toolListHeader">Other</h2>
+        <div className="toolSection">
+          <h2 className="toolListHeader">Other</h2>
           <ul className="toolList">
             <Tech name="C#" img="/img/CSharp.png" alt="C#" />
+            <Tech name="C" img="/img/clang.png" alt="C" />
+            <Tech name="Java" img="/img/java.png" alt="Java" />
+            <Tech name="Python" img="/img/python.png" alt="python" />
+            <Tech name="Linux" img="/img/tux.png" alt="Linux" />
           </ul>
         </div>
       </div>

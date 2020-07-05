@@ -8,29 +8,27 @@ export default function Projects() {
   const domRef = React.useRef<HTMLHeadingElement>(null);
 
   React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        
-        // In your case there's only one element to observe:     
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        // In your case there's only one element to observe:
         if (entry.isIntersecting) {
-          
           // Not possible to set it back to false like this:
           setVisible(true);
-          
+
           // No need to keep observing:
-          if(domRef.current !== null){
+          if (domRef.current !== null) {
             observer.unobserve(domRef.current);
           }
         }
       });
     });
-      if(domRef.current !== null){
-        observer.observe(domRef.current);
-      }
+    if (domRef.current !== null) {
+      observer.observe(domRef.current);
+    }
   }, []);
 
   return (
-    <div className={`projects`}>
+    <div className={`projects`} id='projects'>
       <h3
         className={`projectsHeader fade-in-projects ${
           isVisible ? "is-visible" : ""
@@ -41,11 +39,11 @@ export default function Projects() {
         projects
       </h3>
       <div className="projectsGrid">
-
         <Project
           name="React portofolio"
           description="This portofolio / personal website was created using React with hooks."
           img="/img/react.png"
+          link="https://github.com/Lassi-Koykka/react-portofolio"
           open={false}
         />
 
@@ -54,13 +52,15 @@ export default function Projects() {
           description={`A cabin reservation management system. 
           ${" "}Made with C# and WinForms (SQLite database). Final group project for a software engineering course.`}
           img="/img/CSharp.png"
+          link="https://github.com/Lassi-Koykka/Mokkivaraus"
           open={false}
         />
 
         <Project
-          name="R6 Randomizer"
+          name="R6 randomizer"
           description="A Python script that web scrapes data about the game and randomizes loadouts for the player"
           img="/img/python.png"
+          link="https://github.com/Lassi-Koykka/R6-Loadout-Randomizer"
           open={false}
         />
 
@@ -68,6 +68,15 @@ export default function Projects() {
           name="Dating app sim"
           description="A simple parody game based on dating apps such as Tinder. Created with winforms and C#"
           img="/img/CSharp.png"
+          link="https://github.com/Lassi-Koykka/Dating-App-Sim"
+          open={false}
+        />
+
+        <Project
+          name="R6 REST API"
+          description="A restful API that returns data about operators and their equipment. Made with Python and Flask"
+          img="/img/python.png"
+          link="https://github.com/Lassi-Koykka/R6-Loadout-API"
           open={false}
         />
 
@@ -75,13 +84,7 @@ export default function Projects() {
           name="HTML5 Snake"
           description="Classic snake game made with HTML canvas and vanilla JavaScript."
           img="/img/html5.png"
-          open={false}
-        />
-
-        <Project
-          name="Shell Scripts"
-          description="Some of the shell scripts I have created to speed up my workflow."
-          img="/img/bash.svg"
+          link="https://github.com/Lassi-Koykka/HTML5-Snake"
           open={false}
         />
       </div>

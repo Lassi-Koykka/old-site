@@ -63,22 +63,25 @@
   text-overflow: ellipsis;
   margin-bottom: 1em;
   font-size: 1.2em;
+  transition: 0.1s ease-in-out;
 }
 
 .projectname:hover {
-  color: #fca311;
-  text-decoration: underline;
+  color: #fca311
+}
+
+.projectname:visited {
+  color: white;
 }
 
 .expandArrow {
   z-index: 2;
-  -webkit-transform:rotate(-90deg);
   cursor: pointer;
   width: 10%;
   align-self: center;
   border-radius: 100vw;
   margin-bottom: 1em;
-
+  padding: 2px;
   transition: 0.2s;
 }
 

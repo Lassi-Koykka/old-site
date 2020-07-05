@@ -53,22 +53,21 @@ export default function Project({
         isVisible ? "is-visible" : ""
       } `}
       ref={domRef}
-      onClick={(e) => toggleExpand(e)}
     >
       <div className="innerProject">
-        <div className="projectFront">
+        <div className="projectFront" onClick={(e) => e.preventDefault}>
           <img src={img} alt="project thumbnail" className="projectThumbnail" />
-          <a className="projectname" href={link}>
+          <a className="projectname" href={link} onClick={(e) => e.preventDefault}>
             {name}
           </a>
         </div>
         <img
           className="expandArrow {}"
-          src="https://img.icons8.com/color/48/000000/expand-arrow.png"
+          src="/img/around-arrow.png"
           alt="expand"
           onClick={(e) => toggleExpand(e)}
         />
-        <div className="projectBack">
+        <div className="projectBack" onClick={(e) => toggleExpand(e)}>
           <p className="description">{description}</p>
         </div>
       </div>

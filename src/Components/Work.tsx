@@ -30,7 +30,7 @@ export default function Work() {
   }, []);
 
   return (
-    <div className="workContainer">
+    <div className="workContainer" id="work">
       <h2
         className={`workHeader fade-in-work ${isVisible ? "is-visible" : ""}`}
         ref={domRef}
