@@ -57,6 +57,10 @@ header::before {
   margin: 0.5em;
 }
 
+.emoji {
+  margin-left: 3px;
+}
+
 .heroLink  img{
   width: 2.5em;
 }
@@ -168,6 +172,10 @@ nav {
 
   .navText {
     display: none;
+  }
+
+  .emoji {
+    margin: 0
   }
 
   .title {
