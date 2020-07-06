@@ -77,7 +77,7 @@
 .expandArrow {
   z-index: 2;
   cursor: pointer;
-  width: 10%;
+  width: 1.75em;
   align-self: center;
   border-radius: 100vw;
   margin-bottom: 1em;
@@ -136,11 +136,15 @@
     margin-bottom: 0em;
     text-overflow: ellipsis;
   }
+
+  .expandArrow {
+    width: 2em;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .innerProject {
-    min-width: 85vw;
+    min-width: 80vw;
     height: 100%;
   }
 }

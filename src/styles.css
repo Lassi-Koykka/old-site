@@ -57,6 +57,7 @@ body {
 
 .container{
   display: grid;
+  padding-top: 2em;
   grid-template-columns: repeat(12, 1fr);
   background-color: #e5e5e5;
   overflow-x: hidden;
