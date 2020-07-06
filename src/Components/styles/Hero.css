@@ -57,8 +57,8 @@ header::before {
   margin: 0.5em;
 }
 
-.emoji {
-  margin-left: 3px;
+.navlink > .emoji {
+  margin-right: 5px;
 }
 
 .heroLink  img{
