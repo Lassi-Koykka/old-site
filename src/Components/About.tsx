@@ -34,7 +34,7 @@ export default function About() {
       }`}
     >
       <div ref={domRef}>
-        <img src="/react-portofolio/img/lassi_koykka-min.jpg" alt="Me" className={`picOfMe`} />
+        <img src="/img/lassi_koykka-min.jpg" alt="Me" className={`picOfMe`} />
         <h2 className={`aboutHeader`}>
           <Emoji symbol="📝" label="pen and paper" /> About me
         </h2>

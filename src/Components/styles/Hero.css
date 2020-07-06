@@ -14,7 +14,7 @@ header {
 }
 
 header::before {
-  background: url("/react-portofolio/img/MyPic-min.jpg");
+  background: url("/img/MyPic-min.jpg");
   background-blend-mode: saturation;
   background-repeat: no-repeat;
   background-position: center;

@@ -40,30 +40,30 @@ export default function () {
         <div className="toolSection">
           <h2 className="toolListHeader">Front-end</h2>
           <ul className="toolList">
-            <Tech name="HTML5" img="/react-portofolio/img/html5.png" alt="HTML5" />
-            <Tech name="CSS3" img="/react-portofolio/img/css.png" alt="CSS3" />
-            <Tech name="JavaScript" img="/react-portofolio/img/js-logo2.png" alt="JS" />
-            <Tech name="React.js" img="/react-portofolio/img/react.png" alt="React.js" />
+            <Tech name="HTML5" img="/img/html5.png" alt="HTML5" />
+            <Tech name="CSS3" img="/img/css.png" alt="CSS3" />
+            <Tech name="JavaScript" img="/img/js-logo2.png" alt="JS" />
+            <Tech name="React.js" img="/img/react.png" alt="React.js" />
 
           </ul>
         </div>
         <div className="toolSection">
           <h2 className="toolListHeader">Back-end</h2>
           <ul className="toolList">
-            <Tech name="Flask" img="/react-portofolio/img/flask.png" alt="Flask" />
-            <Tech name="MySQL" img="/react-portofolio/img/mysql-logo.png" alt="MySql" />
-            <Tech name="SQLite" img="/react-portofolio/img/sqlite.png" alt="SQLite" />
-            <Tech name="Node.js" img="/react-portofolio/img/node.png" alt="Node.js" />
+            <Tech name="Flask" img="/img/flask.png" alt="Flask" />
+            <Tech name="MySQL" img="/img/mysql-logo.png" alt="MySql" />
+            <Tech name="SQLite" img="/img/sqlite.png" alt="SQLite" />
+            <Tech name="Node.js" img="/img/node.png" alt="Node.js" />
           </ul>
         </div>
         <div className="toolSection">
           <h2 className="toolListHeader">Other</h2>
           <ul className="toolList">
-            <Tech name="C#" img="/react-portofolio/img/CSharp.png" alt="C#" />
-            <Tech name="C" img="/react-portofolio/img/clang.png" alt="C" />
-            <Tech name="Java" img="/react-portofolio/img/java.png" alt="Java" />
-            <Tech name="Python" img="/react-portofolio/img/python.png" alt="python" />
-            <Tech name="Linux" img="/react-portofolio/img/tux.png" alt="Linux" />
+            <Tech name="C#" img="/img/CSharp.png" alt="C#" />
+            <Tech name="C" img="/img/clang.png" alt="C" />
+            <Tech name="Java" img="/img/java.png" alt="Java" />
+            <Tech name="Python" img="/img/python.png" alt="python" />
+            <Tech name="Linux" img="/img/tux.png" alt="Linux" />
           </ul>
         </div>
       </div>

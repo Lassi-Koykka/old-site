@@ -67,10 +67,10 @@ export default function Hero() {
             Have fun and build things <Emoji symbol="🔧" label="wrench" />
           </h2>
           <a title="GitHub" href="https://www.github.com/lassi-koykka" className="heroLink">
-            <img src="/react-portofolio/img/GitHub-Mark-Light-64px.png" alt="github" className="heroLinkPic"/>
+            <img src="/img/GitHub-Mark-Light-64px.png" alt="github" className="heroLinkPic"/>
           </a>
           <a title="Linked-in" href="https://www.linkedin.com/in/lassi-koykka/" className="heroLink">
-            <img src="/react-portofolio/img/linkedin.png" alt="LinkedIn" className="heroLinkPic"/>
+            <img src="/img/linkedin.png" alt="LinkedIn" className="heroLinkPic"/>
           </a>
         </div>
       </div>

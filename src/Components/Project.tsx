@@ -63,7 +63,7 @@ export default function Project({
         </div>
         <img
           className="expandArrow {}"
-          src="/react-portofolio/img/around-arrow.png"
+          src="/img/around-arrow.png"
           alt="expand"
           onClick={(e) => toggleExpand(e)}
         />
