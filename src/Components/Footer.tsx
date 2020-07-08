@@ -17,7 +17,7 @@ export default function Footer() {
           If you would like to be in touch, you can{" "}
           <a
             className="email"
-            href="mailto:lassi_koykka@hotmail.com?subject=Hey!"
+            href="mailto:me@lassi-koykka.fi?subject=Hey!"
           >
             email me
           </a>{" "} or send a connection request on <a className='email' href="https://www.linkedin.com/in/lassi-koykka">LinkedIn</a>
