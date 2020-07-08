@@ -51,9 +51,9 @@ export default function () {
           <h2 className="toolListHeader">Back-end</h2>
           <ul className="toolList">
             <Tech name="Flask" img="/img/flask.png" alt="Flask" />
+            <Tech name="Node.js" img="/img/node.png" alt="Node.js" />
             <Tech name="MySQL" img="/img/mysql-logo.png" alt="MySql" />
             <Tech name="SQLite" img="/img/sqlite.png" alt="SQLite" />
-            <Tech name="Node.js" img="/img/node.png" alt="Node.js" />
           </ul>
         </div>
         <div className="toolSection">
@@ -63,7 +63,7 @@ export default function () {
             <Tech name="C" img="/img/clang.png" alt="C" />
             <Tech name="Java" img="/img/java.png" alt="Java" />
             <Tech name="Python" img="/img/python.png" alt="python" />
-            <Tech name="Linux" img="/img/tux.png" alt="Linux" />
+            <Tech name="Linux" img="/img/tux.webp" alt="Linux" />
           </ul>
         </div>
       </div>
