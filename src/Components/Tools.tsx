@@ -63,7 +63,7 @@ export default function () {
             <Tech name="C" img="/img/clang.png" alt="C" />
             <Tech name="Java" img="/img/java.png" alt="Java" />
             <Tech name="Python" img="/img/python.png" alt="python" />
-            <Tech name="Linux" img="/img/tux.webp" alt="Linux" />
+            <Tech name="Linux" img="/img/tux.png" alt="Linux" />
           </ul>
         </div>
       </div>

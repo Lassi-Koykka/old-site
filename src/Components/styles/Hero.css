@@ -14,7 +14,7 @@ header {
 }
 
 header::before {
-  background: url("/img/MyPic-min.webp");
+  background: url("/img/MyPic-min.jpg");
   background-blend-mode: saturation;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,15 +30,6 @@ header::before {
   z-index: -1;
 }
 
-
-
-.signature {
-  color: #14213d;
-  margin-top: 3em;
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .titleAndSubtitle {
   filter: none;
@@ -160,11 +151,10 @@ nav {
   }
 
   .titleAndSubtitle {
-    margin-top: 1em;
+    margin-top: auto;
   }
 
   .navlink {
-    font-weight: bolder;
     font-size: 1.3em;
     padding-left: 0;
     padding-right: 0;
@@ -186,10 +176,6 @@ nav {
   .subtitle {
     font-weight: bold;
     font-size: 1.1em;
-  }
-
-  .signature {
-    word-wrap: break-word;
   }
 
 }

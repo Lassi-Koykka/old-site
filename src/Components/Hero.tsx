@@ -57,10 +57,6 @@ export default function Hero() {
         className={`fade-in-hero ${isVisible ? "is-visible" : ""}`}
         style={{ height: "100%", display: "flex", flexDirection: "column" }}
       >
-        <h4 className={`signature`}>
-          A personal website and portofolio <br />
-          by Lassi Köykkä
-        </h4>
         <div className={`titleAndSubtitle`} ref={domRef}>
           <h1 className={`title`}>Lassi Köykkä</h1>
           <h2 className={`subtitle`}>
