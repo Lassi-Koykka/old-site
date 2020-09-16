@@ -30,15 +30,21 @@ export default function Projects() {
   return (
     <div className={`projects`} id='projects'>
       <h3
-        className={`projectsHeader fade-in-projects ${
-          isVisible ? "is-visible" : ""
-        }`}
+        className={`projectsHeader fade-in-projects ${isVisible ? "is-visible" : ""
+          }`}
         ref={domRef}
       >
         <Emoji symbol="🛠️" label="hammer and wrench" /> Some of my favourite
         projects
       </h3>
       <div className="projectsGrid">
+        <Project
+          name="Dev job API"
+          description="A RESTful API which returns parsed data about Finnish developer job postings."
+          img="/img/node.png"
+          link="https://github.com/Lassi-Koykka/HTML5-Snake"
+          open={false}
+        />
         <Project
           name="React portofolio"
           description="This portofolio / personal website was created using React with hooks."
@@ -80,13 +86,6 @@ export default function Projects() {
           open={false}
         />
 
-        <Project
-          name="HTML5 Snake"
-          description="Classic snake game made with HTML canvas and vanilla JavaScript."
-          img="/img/html5.png"
-          link="https://github.com/Lassi-Koykka/HTML5-Snake"
-          open={false}
-        />
       </div>
     </div>
   );
