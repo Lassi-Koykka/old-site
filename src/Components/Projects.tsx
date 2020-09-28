@@ -42,7 +42,7 @@ export default function Projects() {
           name="Dev job API"
           description="A RESTful API which returns parsed data about Finnish developer job postings."
           img="/img/node.png"
-          link="https://github.com/Lassi-Koykka/HTML5-Snake"
+          link="https://github.com/Lassi-Koykka/dev-job-api"
           open={false}
         />
         <Project

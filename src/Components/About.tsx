@@ -38,11 +38,11 @@ export default function About() {
         <h2 className={`aboutHeader`}>
           <Emoji symbol="📝" label="pen and paper" /> About me
         </h2>
-        <a href="/documents/lassi-koykka-CV.pdf" download={true}>
+        <a href="/documents/Lassi_Koykka_CV.pdf">
           <button className="downloadButton">
             {" "}
             <Emoji symbol="📄" label="document" />{" "}
-            <span style={{ textDecoration: "underline" }}>Download CV</span>
+            <span style={{ textDecoration: "underline" }}>View my CV</span>
           </button>
         </a>
 
